@@ -117,15 +117,8 @@ function hydrantwls(hydrant){
 }
 
 function bigWheelwls(bigWheel){
-    var numofbigWheel = parseInt(document.getElementById('bWheel').value);
+    var numofbigWheel = parseInt(document.getElementById('bigWheel').value);
     var wlpers = 0.030 * wcr[numofbigWheel];
-    console.log(wlpers);
-    return wlpers;
-}
-
-function smallWheelwls(smallWheel){
-    var numofsmallWheel = parseInt(document.getElementById('sWheel').value);
-    var wlpers = 0.015 * wcr[numofsmallWheel];
     console.log(wlpers);
     return wlpers;
 }
