@@ -1,21 +1,21 @@
 function main(wells, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
-    let wellscount = parseInt(document.getElementById('wells').value)
+    let wellscount = parseInt(document.getElementById('wells').value);
 
     let wlpers = fanswls(fans) + flamewls(flame) + frostwls(frost) + shockwls(shock) + beamwls(beam) /*+ hydrantwls(hydrant) + bigWheelwls(bigWheel) + smallWheelwls(smallWheel) + stabilizerwls(stabilizer) + hoverstonewls(hoverstone) + lightwls(light) + constructHeadwls(constructHead) + homingCart(homingCart)*/; 
 
-    if (wlpers == 0){
-        //give alert
+    if (isNaN(wlpers)){
+        document.getElementById('ausgabe').innerHTML = "Please enter a time!"
     }else{
     //console.log(wellscount)
     //console.log(wlpers)
     let timefl = wellscount / wlpers ;
     let timeint = parseInt(timefl);
     console.log(timeint + " s");
-    document.getElementById('ausgabe').innerHTML = timeint + " s" 
+    document.getElementById('ausgabe').innerHTML = timeint + " s";
     }
 
 }
-//scr = Standard Combination ule
+//scr = Standard Combination Rule
 var scr = {
     0: 0,
     1: 1,
