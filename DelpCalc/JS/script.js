@@ -1,6 +1,8 @@
 function main(wells, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
     let wellscount = parseInt(document.getElementById('wells').value)
-    let wlpers = fanswls(fans) + flamewls(flame) + frostwls(frost) + shockwls(shock) + beamwls(beam) + hydrantwls(hydrant) + bigWheelwls(bigWheel) + smallWheelwls(smallWheel) + stabilizerwls(stabilizer) + hoverstonewls(hoverstone) + lightwls(light) + constructHeadwls(constructHead) + homingCart(homingCart); 
+
+    let wlpers = fanswls(fans) + flamewls(flame) + frostwls(frost) + shockwls(shock) + beamwls(beam) /*+ hydrantwls(hydrant) + bigWheelwls(bigWheel) + smallWheelwls(smallWheel) + stabilizerwls(stabilizer) + hoverstonewls(hoverstone) + lightwls(light) + constructHeadwls(constructHead) + homingCart(homingCart)*/; 
+
     if (wlpers == 0){
         //give alert
     }else{
@@ -9,6 +11,7 @@ function main(wells, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWh
     let timefl = wellscount / wlpers ;
     let timeint = parseInt(timefl);
     console.log(timeint + " s");
+    document.getElementById('ausgabe').innerHTML = timeint + " s" 
     }
 
 }
@@ -105,7 +108,7 @@ function beamwls(beam){
     console.log(wlpers);
     return wlpers;
 }
-
+/*
 function hydrantwls(hydrant){
     var numofhydrant = parseInt(document.getElementById('hydrant').value);
     var wlpers = 0.030 * scr[numofhydrant];
@@ -168,3 +171,12 @@ function homingCartwls(homingCart){
     console.log(wlpers);
     return wlpers;
 }
+
+*/
+
+
+
+
+
+
+
