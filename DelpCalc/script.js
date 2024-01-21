@@ -15,30 +15,9 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
         document.getElementById('ausgabe').innerHTML = "Please enter a time!"
     }else{
     let timefl = wellscount / wlpers ;
-    if (armorcount == "0"){
-        //do basic
-        let timeint = parseInt(timefl);
-        console.log(timeint + " s");
-        document.getElementById('ausgabe').innerHTML = timeint + " s";
-    }else if(armorcount == "1"){
-        // do *0.85
-        timefl += timefl * 0.85
-        let timeint = parseInt(timefl);
-        console.log(timeint + " s");
-        document.getElementById('ausgabe').innerHTML = timeint + " s";
-    }else if(armorcount == "2"){
-        //do *0.65
-        timefl += timefl * 0.65
-        let timeint = parseInt(timefl);
-        console.log(timeint + " s");
-        document.getElementById('ausgabe').innerHTML = timeint + " s";
-    }else if(armorcount == "3"){
-        //do *0.5
-        timefl += timefl * 0.5
-        let timeint = parseInt(timefl);
-        console.log(timeint + " s");
-        document.getElementById('ausgabe').innerHTML = timeint + " s";
-    }
+    let timeint = parseInt(timefl);
+    console.log(timeint + " s");
+    document.getElementById('ausgabe').innerHTML = timeint + " s";
     }
 
 }
