@@ -9,3 +9,11 @@ button{
 input{
     border-radius: 12px;
 }
+
+a:visited{
+    color: blue;
+}
+
+#dropdown{
+    border-radius: 12px;
+}
