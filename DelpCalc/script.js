@@ -1,7 +1,7 @@
 
 
-let sliderval = parseInt(document.getElementById('armor').value)
-document.getElementById('slider').innerHTML = sliderval
+let sliderval = document.getElementById('armor');
+document.getElementById('slider').innerHTML = sliderval.value;
 
 
 function main(wells, armor, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
