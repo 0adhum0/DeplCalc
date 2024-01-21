@@ -1,4 +1,10 @@
-function main(wells, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
+
+
+let sliderval = parseInt(document.getElementById('armor').value)
+document.getElementById('slider').innerHTML = sliderval
+
+
+function main(wells, armor, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
     let wellscount = parseInt(document.getElementById('wells').value);
 
     let wlpers = fanswls(fans) + flamewls(flame) + frostwls(frost) + shockwls(shock) + beamwls(beam) + hydrantwls(hydrant) + bigWheelwls(bigWheel) + smallWheelwls(smallWheel) + stabilizerwls(stabilizer) + hoverstonewls(hoverstone) + lightwls(light) + constructHeadwls(constructHead) + homingCartwls(homingCart); 

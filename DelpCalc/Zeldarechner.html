@@ -12,6 +12,11 @@
                 <td><input type="number" name="A1" id="wells" value="15" max="48"></td>
             </TR>
             <TR>
+                <td>How many Parts of Zonai Armor do you have?</td>
+                <td><input type="range"  id="armor" value="0" min="0" max="3"></td>
+                <td><div id="slider"></div></td>
+            </TR>
+            <TR>
             </TR>
             <tr>
                 <td>How many of this item do you use?</td>
@@ -87,7 +92,7 @@
                 <td>Time you have<div id="ausgabe"></div></td>
             </tr>
         </table>
-        <button onclick="javascript:main(wells, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart)">calc</button>
+        <button onclick="javascript:main(wells, armor, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart)">calc</button>
         <footer>
             <p>Based on the works of <a href="https://www.youtube.com/@paradox_guardian">Paradox Gaming</a></p>
         </footer>
