@@ -1,23 +1,44 @@
-function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
-    let wellscount = parseInt(document.getElementById('wells').value);
+//NOTE: explain everything
 
+
+function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
+    //get well count
+    let wellscount = parseInt(document.getElementById('wells').value);
+    //check how many wells per second get used overall
     let wlpers = fanswls(fans) + flamewls(flame) + frostwls(frost) + shockwls(shock) + beamwls(beam) + hydrantwls(hydrant) + bigWheelwls(bigWheel) + smallWheelwls(smallWheel) + stabilizerwls(stabilizer) + hoverstonewls(hoverstone) + lightwls(light) + constructHeadwls(constructHead) + homingCartwls(homingCart); 
 
-
+    //checking how many armor pieces there are
     let armorcount = document.getElementById('dropdown').value;
 
-    console.log(armorcount);
-
-
-    if (isNaN(wlpers)){
+    //calculating time
+    if (isNaN(wlpers)){//idk what this is for
         document.getElementById('ausgabe').innerHTML = "Please enter a time!"
     }else{
-    //console.log(wellscount)
-    //console.log(wlpers)
     let timefl = wellscount / wlpers ;
-    let timeint = parseInt(timefl);
-    console.log(timeint + " s");
-    document.getElementById('ausgabe').innerHTML = timeint + " s";
+    if (armorcount == "0"){
+        //do basic
+        let timeint = parseInt(timefl);
+        console.log(timeint + " s");
+        document.getElementById('ausgabe').innerHTML = timeint + " s";
+    }else if(armorcount == "1"){
+        // do *0.85
+        timefl = timefl * 0.85
+        let timeint = parseInt(timefl);
+        console.log(timeint + " s");
+        document.getElementById('ausgabe').innerHTML = timeint + " s";
+    }else if(armorcount == "2"){
+        //do *0.65
+        timefl = timefl * 0.65
+        let timeint = parseInt(timefl);
+        console.log(timeint + " s");
+        document.getElementById('ausgabe').innerHTML = timeint + " s";
+    }else if(armorcount == "3"){
+        //do *0.5
+        timefl = timefl * 0.5
+        let timeint = parseInt(timefl);
+        console.log(timeint + " s");
+        document.getElementById('ausgabe').innerHTML = timeint + " s";
+    }
     }
 
 }
@@ -170,3 +191,7 @@ function homingCartwls(homingCart){
     console.log(wlpers);
     return wlpers;
 }
+
+
+
+
