@@ -17,7 +17,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             let timefl = wellscount / wlpers ;
             let timeint = parseInt(timefl);
             console.log(timeint + " s");
-            isNaN(timeint) ? /*document.getElementById('ausgabe').innerHTML = timeint + " s"*/ console.log(timeint): document.getElementById('ausgabe').innerHTML = "Enter something!";
+            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = "Enter something!": document.getElementById('ausgabe').innerHTML = timeint + " s";
             
         }
     }else if(armorcount == "1"){
@@ -28,7 +28,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             let timefl = wellscount / wlpers ;
             let timeint = parseInt(timefl);
             console.log(timeint + " s");
-            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = timeint + " s" : document.getElementById('ausgabe').innerHTML = "Enter something!";
+            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = "Enter something!": document.getElementById('ausgabe').innerHTML = timeint + " s";
         }
     }else if(armorcount == "2"){
         wlpers = wlpers * 0.65
@@ -38,7 +38,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             let timefl = wellscount / wlpers ;
             let timeint = parseInt(timefl);
             console.log(timeint + " s");
-            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = timeint + " s" : document.getElementById('ausgabe').innerHTML = "Enter something!";
+            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = "Enter something!": document.getElementById('ausgabe').innerHTML = timeint + " s";
         }
     }else if(armorcount == "3"){
         wlpers = wlpers * 0.5
@@ -48,7 +48,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             let timefl = wellscount / wlpers ;
             let timeint = parseInt(timefl);
             console.log(timeint + " s");
-            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = timeint + " s" : document.getElementById('ausgabe').innerHTML = "Enter something!";
+            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = "Enter something!": document.getElementById('ausgabe').innerHTML = timeint + " s";
         }
     }
 
