@@ -17,7 +17,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             let timefl = wellscount / wlpers ;
             let timeint = parseInt(timefl);
             console.log(timeint + " s");
-            isNaN(timeint) ? document.getElementById('ausgabe').innerHTML = timeint + " s" : document.getElementById('ausgabe').innerHTML = "Enter something!";
+            isNaN(timeint) ? /*document.getElementById('ausgabe').innerHTML = timeint + " s"*/ console.log(timeint): document.getElementById('ausgabe').innerHTML = "Enter something!";
             
         }
     }else if(armorcount == "1"){
