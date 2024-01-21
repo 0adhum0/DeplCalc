@@ -39,7 +39,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             console.log(timeint + " s");
             document.getElementById('ausgabe').innerHTML = timeint + " s";
         }
-    }else if(armorcount = "13"){
+    }else if(armorcount = "3"){
         wlpers = wlpers * 0.5
         if (isNaN(wlpers)){//idk what this is for
             document.getElementById('ausgabe').innerHTML = "Please enter a time!"
