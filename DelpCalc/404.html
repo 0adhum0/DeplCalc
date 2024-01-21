@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Not Found</title>
+    <style>
+        body {
+            background-color: #0d1a23;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>404 - Not Found</h1>
+    <p>Sorry, the page you are looking for is in another castle!</p>
+    
+    <div id="zelda-fact">
+        <p id="zelda-quote-fact"></p>
+    </div>
+
+    <script>
+        // Zelda quotes and facts
+        const zeldaData = [
+            { type: 'quote', content: 'It\'s dangerous to go alone! Take this.', character: 'Link\'s Uncle' },
+            { type: 'fact', content: 'The Legend of Zelda was first released in 1986.' },
+            { type: 'quote', content: 'Hey! Listen!', character: 'Navi' },
+            { type: 'fact', content: 'The Triforce is a powerful relic consisting of three golden triangles.' },
+            { type: 'quote', content: 'A sword wields no strength unless the hand that holds it has courage.', character: 'The Hero\'s Shade' },
+            { type: 'fact', content: 'The Master Sword is also known as the "Blade of Evil\'s Bane".' },
+            { type: 'quote', content: 'I am Error.', character: 'Error' },
+            { type: 'fact', content: 'Link was originally named "Link" because he was supposed to be a connection between the player and the game.' },
+            { type: 'quote', content: 'Hyrule, thy kingdom is vast, and thy destiny divine...', character: 'The Great Deku Tree' },
+            { type: 'fact', content: 'The Legend of Zelda: Ocarina of Time is considered one of the greatest video games of all time.' },
+            // Add more quotes or facts as needed
+        ];
+
+        // Display a random Zelda quote or fact
+        const randomIndex = Math.floor(Math.random() * zeldaData.length);
+        const randomData = zeldaData[randomIndex];
+
+        const zeldaQuoteFactElement = document.getElementById('zelda-quote-fact');
+        if (randomData.type === 'quote') {
+            zeldaQuoteFactElement.innerHTML = `"${randomData.content}"<br>- ${randomData.character}`;
+        } else {
+            zeldaQuoteFactElement.innerText = `Fun Fact: ${randomData.content}`;
+        }
+    </script>
+</body>
+</html>
