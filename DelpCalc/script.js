@@ -9,9 +9,9 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
 
     //checking how many armor pieces there are
     let armorcount = document.getElementById('dropdown').value;
-    if (armorcount = "0"){
+    if (armorcount == "0"){
             //calculating time
-        console.log("arm" + armorcount)
+        console.log("arm" + armorcount);
         if (isNaN(wlpers)){//idk what this is for
             document.getElementById('ausgabe').innerHTML = "Please enter a time!"
         }else{
@@ -20,7 +20,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             console.log(timeint + " s");
             document.getElementById('ausgabe').innerHTML = timeint + " s";
         }
-    }else if(armorcount = "1"){
+    }else if(armorcount == "1"){
         wlpers = wlpers * 0.85
         if (isNaN(wlpers)){//idk what this is for
             document.getElementById('ausgabe').innerHTML = "Please enter a time!"
@@ -30,7 +30,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             console.log(timeint + " s");
             document.getElementById('ausgabe').innerHTML = timeint + " s";
         }
-    }else if(armorcount = "2"){
+    }else if(armorcount == "2"){
         wlpers = wlpers * 0.65
         if (isNaN(wlpers)){//idk what this is for
             document.getElementById('ausgabe').innerHTML = "Please enter a time!"
@@ -40,7 +40,7 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
             console.log(timeint + " s");
             document.getElementById('ausgabe').innerHTML = timeint + " s";
         }
-    }else if(armorcount = "3"){
+    }else if(armorcount == "3"){
         wlpers = wlpers * 0.5
         if (isNaN(wlpers)){//idk what this is for
             document.getElementById('ausgabe').innerHTML = "Please enter a time!"
