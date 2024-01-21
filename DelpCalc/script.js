@@ -11,7 +11,6 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
     let armorcount = document.getElementById('dropdown').value;
     if (armorcount == "0"){
             //calculating time
-        console.log("arm" + armorcount);
         if (isNaN(wlpers)){//idk what this is for
             document.getElementById('ausgabe').innerHTML = "Please enter a time!"
         }else{
@@ -45,7 +44,6 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
         if (isNaN(wlpers)){//idk what this is for
             document.getElementById('ausgabe').innerHTML = "Please enter a time!"
         }else{
-            console.log("well" + wlpers);
             let timefl = wellscount / wlpers ;
             let timeint = parseInt(timefl);
             console.log(timeint + " s");
