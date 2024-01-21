@@ -1,8 +1,11 @@
 
+// Get the slider element
+var slider = document.getElementById("armor");
 
-let sliderval = document.getElementById('armor');
-console.log(sliderval)
-document.getElementById('slider').innerHTML = sliderval.value;
+// Get the span element to display slider value
+var sliderValueSpan = document.getElementById("slider");
+
+console.log(sliderValueSpan)
 
 
 function main(wells, armor, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
