@@ -4,10 +4,12 @@
 
 button{
     border-radius: 12px;
+    border-width: 1px;
 }
 
 input{
     border-radius: 12px;
+    border-width: 1px;
 }
 
 a:visited{
@@ -16,4 +18,5 @@ a:visited{
 
 #dropdown{
     border-radius: 12px;
+    border-width: 1px;
 }
