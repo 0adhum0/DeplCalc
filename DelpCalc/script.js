@@ -9,16 +9,48 @@ function main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWhee
 
     //checking how many armor pieces there are
     let armorcount = document.getElementById('dropdown').value;
-
-    //calculating time
-    if (isNaN(wlpers)){//idk what this is for
-        document.getElementById('ausgabe').innerHTML = "Please enter a time!"
-    }else{
-    let timefl = wellscount / wlpers ;
-    let timeint = parseInt(timefl);
-    console.log(timeint + " s");
-    document.getElementById('ausgabe').innerHTML = timeint + " s";
+    if (armorcount = "0"){
+            //calculating time
+        if (isNaN(wlpers)){//idk what this is for
+            document.getElementById('ausgabe').innerHTML = "Please enter a time!"
+        }else{
+            let timefl = wellscount / wlpers ;
+            let timeint = parseInt(timefl);
+            console.log(timeint + " s");
+            document.getElementById('ausgabe').innerHTML = timeint + " s";
+        }
+    }else if(armorcount = "1"){
+        wlpers = wlpers * 0.85
+        if (isNaN(wlpers)){//idk what this is for
+            document.getElementById('ausgabe').innerHTML = "Please enter a time!"
+        }else{
+            let timefl = wellscount / wlpers ;
+            let timeint = parseInt(timefl);
+            console.log(timeint + " s");
+            document.getElementById('ausgabe').innerHTML = timeint + " s";
+        }
+    }else if(armorcount = "2"){
+        wlpers = wlpers * 0.65
+        if (isNaN(wlpers)){//idk what this is for
+            document.getElementById('ausgabe').innerHTML = "Please enter a time!"
+        }else{
+            let timefl = wellscount / wlpers ;
+            let timeint = parseInt(timefl);
+            console.log(timeint + " s");
+            document.getElementById('ausgabe').innerHTML = timeint + " s";
+        }
+    }else if(armorcount = "13"){
+        wlpers = wlpers * 0.5
+        if (isNaN(wlpers)){//idk what this is for
+            document.getElementById('ausgabe').innerHTML = "Please enter a time!"
+        }else{
+            let timefl = wellscount / wlpers ;
+            let timeint = parseInt(timefl);
+            console.log(timeint + " s");
+            document.getElementById('ausgabe').innerHTML = timeint + " s";
+        }
     }
+
 
 }
 //scr = Standard Combination Rule
