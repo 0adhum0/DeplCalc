@@ -1,6 +1,7 @@
 
 
 let sliderval = document.getElementById('armor');
+console.log(sliderval)
 document.getElementById('slider').innerHTML = sliderval.value;
 
 
