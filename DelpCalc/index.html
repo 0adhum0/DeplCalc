@@ -5,14 +5,14 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body class="text">
-        <H1>Welcome to the Zonai devices Calculator</H1>
+        <H1>Welcome to the Zonai devices calculator</H1>
         <table>
             <TR>
-                <td>How many Wells (Parts of a Battery) do you have?</td>
+                <td>How many wells (parts of a battery) do you have?</td>
                 <td><input type="number" name="A1" id="wells" value="15" max="48"></td>
             </TR>
             <TR>
-                <td>How many Parts of the Zonai Armor do you wear?</td>
+                <td>How many parts of the Zonai armor do you wear?</td>
                 <td>
                     <select id="dropdown" name="dropdown">
                         <option value="0" selected>0</option>
@@ -23,44 +23,44 @@
                 </td>           
             </TR>
             <tr>
-                <td>How many of this item do you use?</td>
+                <td>How many of this items do you use?</td>
             </tr>
         </table>
         <table>
             <tr>
                 <td><img src="./pictures/fan.jpeg" width="75" height="75"></td>
                 <td>Item: Fan
-                <td>Count of Items: </td>
+                <td>Count of items: </td>
                 <td><input type="number" name="A2" id="fans"value="0" max="20"></td>
             </tr>
             <tr>
                 <td><img src="./pictures/flame.jpeg" width="75" height="75"></td>
-                <td>Item: Flame Emitter</td>
-                <td>Count of Items: </td>
+                <td>Item: flame emitter</td>
+                <td>Count of items: </td>
                 <td><input type="number" name="A3" id="flame"value="0" max="20"></td>
             </tr>
             <tr>
                 <td><img src="./pictures/frost.jpeg" width="75" height="75"></td>
-                <td>Item: Frost Emitter</td>
-                <td>Count of Items: </td>
+                <td>Item: frost emitter</td>
+                <td>Count of items: </td>
                 <td><input type="number" name="A4" id="frost"value="0" max="20"></td>
             </tr>
             <tr>
                 <td><img src="./pictures/shock.jpeg" width="75" height="75"></td>
-                <td>Item: Shock Emitter</td>
-                <td>Count of Items: </td>
+                <td>Item: shock emitter</td>
+                <td>Count of items: </td>
                 <td><input type="number" name="A5" id="shock"value="0" max="20"></td>
             </tr>
             <tr>
                 <td><img src="./pictures/beam.jpeg" width="75" height="75"></td>
-                <td>Item: Beam Emitter</td>
-                <td>Count of Items: </td>
+                <td>Item: beam emitter</td>
+                <td>Count of items: </td>
                 <td><input type="number" name="A6" id="beam" value="0" max="20"></td>
             </tr>
             <tr>
                 <td><img src="./pictures/hydrant.jpeg" width="75" height="75"></td>
                 <td>Item: hydrant</td>
-                <td>Count of Items: </td>
+                <td>Count of items: </td>
                 <td><input type="number" name="A6" id="hydrant" value="0" max="20"></td>
             </tr>
             <tr>
@@ -112,7 +112,7 @@
             </tr>
         </table>
         <button onclick="javascript:main(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart)">calc</button>
-        <button oneclick="javascript:reset(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart)">reset</button>
+        <button onclick="javascript:reset(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart)">reset</button>
         <footer>
             <p>Based on the works of <a href="https://www.youtube.com/@paradox_guardian" target="_blank">Paradox Gaming</a></p>
         </footer>
