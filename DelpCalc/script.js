@@ -205,7 +205,7 @@ function homingCartwls(homingCart){
 }
 
 function reset(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
-    document.getElementById('wells').value = 0;
+    document.getElementById('wells').value = "0";
 }
 
 
