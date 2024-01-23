@@ -205,7 +205,21 @@ function homingCartwls(homingCart){
 }
 
 function reset(wells, dropdown, fans, flame, frost, shock, beam, hydrant, bigWheel, smallWheel, stabilizer, hoverstone, light, constructHead, homingCart){
-    document.getElementById('wells').value = "0";
+    document.getElementById('wells').value = "15";
+    document.getElementById('fans').value = "0";
+    document.getElementById('flame').value = "0";
+    document.getElementById('frost').value = "0";
+    document.getElementById('shock').value = "0";
+    document.getElementById('beam').value = "0";
+    document.getElementById('hydrant').value = "0";
+    document.getElementById('bigWheel').value = "0";
+    document.getElementById('smallWheel').value = "0";
+    document.getElementById('stabilizer').value = "0";
+    document.getElementById('hoverStone').value = "0";
+    document.getElementById('light').value = "0";
+    document.getElementById('constructHead').value = "0";
+    document.getElementById('homingCart').value = "0";
+
 }
 
 
