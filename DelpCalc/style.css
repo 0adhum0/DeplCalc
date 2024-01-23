@@ -7,6 +7,9 @@ body {
 button{
     border-radius: 12px;
     border-width: 1px;
+    background-color: #0d1a23;
+    color: #ecd4be;
+    border-color: #ecd4be;
 }
 
 input{
@@ -14,6 +17,15 @@ input{
     border-width: 1px;
     background-color: #0d1a23;
     color: #ecd4be;
+    border-color: #ecd4be;
+}
+
+select{
+    border-radius: 12px;
+    border-width: 1px;
+    background-color: #0d1a23;
+    color: #ecd4be;
+    border-color: #ecd4be;
 }
 
 a:visited{
